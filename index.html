@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Someone Special ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    font-family:Arial, sans-serif;
+    color:white;
+    text-align:center;
+    overflow-x:hidden;
+
+    background:
+      radial-gradient(circle at top left,#ff4f9a 0%,transparent 35%),
+      radial-gradient(circle at top right,#5b5cff 0%,transparent 35%),
+      linear-gradient(135deg,#160018,#32134f,#10153d);
+}
+
+/* Floating hearts */
+.heart{
+    position:fixed;
+    font-size:28px;
+    animation:float 6s linear infinite;
+    opacity:.8;
+    z-index:0;
+}
+
+.heart:nth-child(1){
+    left:7%;
+    top:20%;
+    animation-delay:0s;
+}
+
+.heart:nth-child(2){
+    left:22%;
+    top:55%;
+    animation-delay:2s;
+}
+
+.heart:nth-child(3){
+    right:20%;
+    top:30%;
+    animation-delay:1s;
+}
+
+.heart:nth-child(4){
+    right:7%;
+    top:65%;
+    animation-delay:3s;
+}
+
+.heart:nth-child(5){
+    left:45%;
+    top:75%;
+    animation-delay:4s;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0) rotate(0deg);
+        opacity:.2;
+    }
+
+    50%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(-180px) rotate(25deg);
+        opacity:0;
+    }
+}
+
+.container{
+    position:relative;
+    z-index:2;
+    width:90%;
+    max-width:700px;
+    margin:auto;
+    padding:55px 15px;
+}
+
+h1{
+    font-size:42px;
+    margin-bottom:20px;
+    text-shadow:0 0 20px #ff9bd2;
+}
+
+.subtitle{
+    font-size:19px;
+    line-height:1.7;
+    color:#ffe8f5;
+    margin-bottom:28px;
+}
+
+.surprise-btn{
+    border:none;
+    padding:17px 32px;
+    border-radius:40px;
+    font-size:18px;
+    font-weight:bold;
+    color:white;
+    cursor:pointer;
+
+    background:linear-gradient(90deg,#ff4f9a,#9b5cff);
+    box-shadow:0 0 25px rgba(255,80,170,.6);
+
+    transition:.3s;
+}
+
+.surprise-btn:hover{
+    transform:scale(1.06);
+    box-shadow:0 0 35px rgba(255,120,210,.9);
+}
+
+#content{
+    display:none;
+    margin-top:35px;
+}
+
+.title{
+    font-size:30px;
+    margin-bottom:25px;
+}
+
+.card{
+    background:rgba(255,255,255,.13);
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:25px;
+    padding:25px;
+    margin:20px 0;
+
+    backdrop-filter:blur(12px);
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+.card h3{
+    color:#ffc6e8;
+    margin-bottom:15px;
+    letter-spacing:2px;
+}
+
+.card p{
+    font-size:18px;
+    line-height:1.8;
+    color:#fff;
+}
+
+/* SONG */
+.song-box{
+    margin:30px 0;
+    padding:25px;
+    border-radius:25px;
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.2);
+    backdrop-filter:blur(12px);
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+.song-box h2{
+    margin-bottom:18px;
+}
+
+.play-btn{
+    border:none;
+    background:#ff4f9a;
+    color:white;
+    padding:14px 25px;
+    border-radius:30px;
+    font-size:17px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.play-btn:hover{
+    background:#ff76b2;
+    transform:scale(1.04);
+}
+
+#status{
+    margin-top:12px;
+    color:#ffd6ed;
+}
+
+.footer{
+    margin-top:35px;
+    color:#ffd9ed;
+    font-size:16px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Floating hearts -->
+<div class="heart">❤️</div>
+<div class="heart">💖</div>
+<div class="heart">💕</div>
+<div class="heart">💗</div>
+<div class="heart">✨</div>
+
+
+<div class="container">
+
+    <h1> Love you priya my sweetheart  ✨</h1>
+
+    <div class="subtitle">
+        Kuch cheezein words mein explain nahi hoti...<br>
+        bas feel ki jaati hain. ❤️
+    </div>
+
+
+    <!-- Surprise Button -->
+    <button class="surprise-btn" onclick="openSurprise()">
+        💝 Surprise Opened
+    </button>
+
+
+    <div id="content">
+
+        <h2 class="title">Just For You ❤️</h2>
+
+
+        <!-- SHAYARI 01 -->
+        <div class="card">
+
+            <h3>SHAYARI • 01</h3>
+
+            <p>
+                Hazaaron chehron mein ek chehra khaas lagta hai,<br>
+                Bheed mein bhi bas wahi paas lagta hai,<br>
+                Pata nahi kya rishta hai usse dil ka,<br>
+                Bas uska khayal aate hi dil ko sukoon sa lagta hai. ✨
+            </p>
+
+        </div>
+
+
+        <!-- SHAYARI 02 -->
+        <div class="card">
+
+            <h3>SHAYARI • 02</h3>
+
+            <p>
+                Kuch baatein lafzon se kahi nahi jaati,<br>
+                Kuch feelings aankhon se chhupi nahi jaati,<br>
+                Ek ajeeb si khushi milti hai uske khayal se,<br>
+                Jo kisi aur wajah se mil nahi paati. 🌸
+            </p>
+
+        </div>
+
+
+        <!-- SONG - BEECH ME -->
+        <div class="song-box">
+
+            <h2>🎵 A Song For You ❤️</h2>
+
+            <button class="play-btn" onclick="playSong()">
+                ▶️ Play Song
+            </button>
+
+            <p id="status">
+                Surprise kholo aur song enjoy karo ❤️
+            </p>
+
+            <audio id="mySong" loop>
+                <source
+                    src="Shaamat Ek Villain Returns 128 Kbps.mp3"
+                    type="audio/mpeg">
+            </audio>
+
+        </div>
+
+
+        <!-- SHAYARI 03 -->
+        <div class="card">
+
+            <h3>SHAYARI • 03</h3>
+
+            <p>
+                Na koi wada chahiye, na koi kasam chahiye,<br>
+                Bas ek chhoti si muskaan har pal chahiye,<br>
+                Zindagi chahe jitni bhi busy ho jaaye,<br>
+                Dil ko ek khaas yaad hamesha chahiye. ❤️
+            </p>
+
+        </div>
+
+
+        <!-- SHAYARI 04 -->
+        <div class="card">
+
+            <h3>SHAYARI • 04</h3>
+
+            <p>
+                Kabhi kabhi ek insaan hi kaafi hota hai,<br>
+                Khamoshi mein bhi dil ke paas hota hai,<br>
+                Uski ek smile yaad aa jaaye agar,<br>
+                Toh poora din thoda aur khaas hota hai. 💗
+            </p>
+
+        </div>
+
+
+        <!-- SHAYARI 05 -->
+        <div class="card">
+
+            <h3>SHAYARI • 05</h3>
+
+            <p>
+                Kahani koi badi nahi hai,<br>
+                Bas ek ehsaas hai jo dil mein basa hai,<br>
+                Naam likhne ki zarurat bhi nahi,<br>
+                Kyunki dil jaanta hai woh kaun hai. ✨
+            </p>
+
+        </div>
+
+
+        <div class="footer">
+            Made with ❤️ just for someone special ✨
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+/* Surprise button */
+function openSurprise(){
+
+    document.getElementById("content").style.display = "block";
+
+    document.querySelector(".surprise-btn").innerHTML =
+        "💖 Surprise Opened";
+
+    playSong();
+}
+
+
+/* Song 37 seconds se start */
+function playSong(){
+
+    const song = document.getElementById("mySong");
+
+    /*
+       Song ko 37 seconds se start karna hai.
+       Browser audio load hone ke baad position set hogi.
+    */
+
+    function startFrom37(){
+
+        song.currentTime = 37;
+
+        song.play().then(function(){
+
+            document.getElementById("status").innerHTML =
+                "🎵 Song is playing... ❤️";
+
+        }).catch(function(){
+
+            document.getElementById("status").innerHTML =
+                "❤️ Play Song button dabao.";
+
+        });
+    }
+
+
+    if(song.readyState >= 1){
+
+        startFrom37();
+
+    }else{
+
+        song.addEventListener(
+            "loadedmetadata",
+            startFrom37,
+            { once:true }
+        );
+
+    }
+}
+
+</script>
+
+</body>
+</html>
